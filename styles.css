@@ -70,6 +70,7 @@ body {
   outline: none;
   border: 1px solid #000;
   border-radius: 5px;
+  text-align: center;
 }
 
 .btn {
