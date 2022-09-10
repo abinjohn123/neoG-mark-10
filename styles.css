@@ -29,8 +29,7 @@ body {
 
 .error-message {
   color: red;
-  display: inline-block;
-  max-width: 20rem;
+  display: block;
   text-align: center;
 }
 
@@ -60,6 +59,7 @@ body {
 .form-row {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.4rem;
 
   align-self: center;
@@ -72,6 +72,7 @@ body {
   border: 1px solid #000;
   border-radius: 5px;
   text-align: center;
+  width: 40rem;
 }
 
 .btn {
