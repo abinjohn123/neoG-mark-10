@@ -8,51 +8,55 @@
     <title>Cash Register</title>
   </head>
   <body>
-    <form class="form container">
-      <div class="form-row form-details">
-        <h1>Cash Register Manager</h1>
-        <p>
-          Enter the bill amount and cash received from customer to know how to
-          return the change in the minimum number of notes
-        </p>
+    <div class="outer-container">
+      <form class="form container">
+        <div class="form-row form-details">
+          <h1>Cash Register Manager</h1>
+          <p>
+            Enter the bill amount and cash received from customer</br>to know the minimum number of notes to return
+          </p>
+        </div>
+        <div class="form-row" id="form-row-bill-amount">
+          <label class="form-row-label" for="bill-amount">Bill Amount</label>
+          <input type="number" name="bill-amount" id="bill-amount" />
+        </div>
+        <div class="form-row" id="form-row-user-cash">
+          <label class="form-row-label" for="user-amount">Cash Received</label>
+          <input type="number" name="user-amount" id="user-amount" />
+        </div>
+        <button class="btn" type="submit" id="form-submit">
+          Calculate Change
+        </button>
+      </form>
+      <div class="app-output">
+        <div class="output-balance">
+          Balance: ₹<span id="output-balance-value">0</span>
+        </div>
+        <table>
+          <tbody>
+            <tr class="output-row app-output-change">
+              <td>No of Notes</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr>
+            <tr class="output-row app-output-denominations">
+              <td>Notes</td>
+              <td>1</td>
+              <td>5</td>
+              <td>10</td>
+              <td>20</td>
+              <td>100</td>
+              <td>500</td>
+              <td>2000</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="form-row" id="form-row-bill-amount">
-        <label class="form-row-label" for="bill-amount">Bill Amount</label>
-        <input type="number" name="bill-amount" id="bill-amount" />
-      </div>
-      <div class="form-row" id="form-row-user-cash">
-        <label class="form-row-label" for="user-amount">User Cash</label>
-        <input type="number" name="user-amount" id="user-amount" />
-      </div>
-      <button class="btn" type="submit" id="form-submit">
-        Calculate Change
-      </button>
-    </form>
-    <div class="app-output">
-      <table>
-        <tbody>
-          <tr class="output-row app-output-change">
-            <td>No of Notes</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          <tr class="output-row app-output-denominations">
-            <td>Notes</td>
-            <td>1</td>
-            <td>5</td>
-            <td>10</td>
-            <td>20</td>
-            <td>100</td>
-            <td>500</td>
-            <td>2000</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
     <script src="script.js"></script>
   </body>
